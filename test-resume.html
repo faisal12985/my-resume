@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume - Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8fafc;
+        }
+
+        .resume-container {
+            max-width: 8.5in;
+            margin: 2rem auto;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2.5rem 2rem;
+            text-align: center;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .title {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .main-content {
+            padding: 2.5rem;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .objective-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #4a5568;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .project-item {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #667eea;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="name">Your Name</h1>
+                <p class="title">Frontend Developer</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <span>your.email@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📱</span>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>🌐</span>
+                        <span>linkedin.com/in/yourprofile</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <span>Your City, State</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Career Objective -->
+            <section class="section">
+                <h2 class="section-title">Career Objective</h2>
+                <p class="objective-text">
+                    Passionate frontend developer currently pursuing education at VCTM College with strong expertise in modern web technologies. 
+                    Seeking to leverage my skills in HTML, CSS, JavaScript, React, and Next.js to create exceptional user experiences.
+                </p>
+            </section>
+
+            <!-- Education -->
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                <div style="background: #f7fafc; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #667eea;">
+                    <h3 style="font-size: 1.2rem; font-weight: 600; color: #2d3748;">VCTM College</h3>
+                    <p style="color: #667eea; font-weight: 500;">2025 - 2028</p>
+                    <p style="color: #4a5568;">Currently pursuing degree in Computer Science/Information Technology</p>
+                </div>
+            </section>
+
+            <!-- Technical Skills -->
+            <section class="section">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-list">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">Responsive Design</span>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="section">
+                <h2 class="section-title">Projects</h2>
+                
+                <div class="project-item">
+                    <h3 class="project-title">E-Commerce Website</h3>
+                    <p style="color: #667eea; font-size: 0.9rem; margin-bottom: 1rem;">React.js, Next.js, CSS3</p>
+                    <ul style="color: #4a5568; list-style: none;">
+                        <li style="margin-bottom: 0.5rem;">▸ Developed a fully responsive e-commerce platform</li>
+                        <li style="margin-bottom: 0.5rem;">▸ Implemented shopping cart and product filtering</li>
+                        <li style="margin-bottom: 0.5rem;">▸ Integrated payment gateway and user authentication</li>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <h3 class="project-title">School Website</h3>
+                    <p style="color: #667eea; font-size: 0.9rem; margin-bottom: 1rem;">HTML5, CSS3, JavaScript</p>
+                    <ul style="color: #4a5568; list-style: none;">
+                        <li style="margin-bottom: 0.5rem;">▸ Created comprehensive school website with multiple pages</li>
+                        <li style="margin-bottom: 0.5rem;">▸ Designed responsive layouts for all devices</li>
+                        <li style="margin-bottom: 0.5rem;">▸ Implemented interactive features and forms</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
